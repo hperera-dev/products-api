@@ -13,6 +13,8 @@ public class Product {
         this.price = price;
     }
 
+    //Tutorial 2, 25th task answer: Because the API returns HTTP 200 without throwing an error, I would have to manually cross-check each JSON field in the response against the declared fields in the Java class.
+
     public Long getId() {
         return id;
     }
