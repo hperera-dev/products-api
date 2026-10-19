@@ -15,6 +15,12 @@ public class ProductService {
         return products;
     }
 
+    public ProductService() {
+        products.add(new DigitalProduct(nextId++, "Assasins Creed 2", 26.99, "ubisoft.com/assasins", 50000));
+        products.add(new PhysicalProduct(nextId++,"RTX 6000 pro", 1500.99, 1.2, "20 * 40"));
+
+    }
+
     public Product addProduct(Product product) {
         product.setId(nextId++);
         products.add(product);
